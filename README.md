@@ -79,7 +79,3 @@ Daily Mealie sync from the host's crontab:
 claude mcp add --transport http self-dev-hub https://<your-host>/api/mcp \
   --header "Authorization: Bearer <MCP_API_TOKEN>"
 ```
-
-## What I'd do differently
-
-TODO: write this myself.
