@@ -2,10 +2,13 @@
 
 A single-user dashboard for planning my days. It keeps projects and day-to-day items in SQLite, pulls planned meals from my self-hosted [Mealie](https://mealie.io) instance, publishes everything that's still open as a private calendar feed, and exposes the same data to AI assistants through an MCP endpoint. It runs as a Docker container on my home server behind Caddy (setup in [homelab](https://github.com/Olys6/homelab)).
 
-TODO: write the "why I built it" in my own words.
+After moving to Switzerland I struggled to get back into a rhythm, especially with cooking. I built Self-Dev Hub to give my days some structure: it pulls my meal plan from Mealie, reminds me what to cook and when, keeps small projects moving, and keeps a record of what actually got done, not just what was planned.
 
-![Screenshot of the dashboard](docs/screenshot.png)
-<!-- TODO: add docs/screenshot.png -->
+![Demo of the dashboard](docs/demo.gif)
+
+| Today | Calendar | Project board |
+|---|---|---|
+| ![Today view](docs/today.png) | ![Calendar view](docs/calendar.png) | ![Project board](docs/project-board.png) |
 
 ## What it does
 
