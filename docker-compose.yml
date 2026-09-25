@@ -1,0 +1,20 @@
+services:
+  self-dev-hub:
+    build: .
+    container_name: self-dev-hub
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+    env_file:
+      - ./.env
+    environment:
+      TZ: ${TZ:-UTC}
+    networks:
+      - default
+      # Shared network with the Caddy reverse proxy (see the homelab repo).
+      # Create it once with: docker network create caddy_net
+      - caddy_net
+
+networks:
+  caddy_net:
+    external: true
